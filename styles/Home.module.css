@@ -5,10 +5,15 @@
 
 .profile {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-gap: 16px;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 30px;
 }
 
+.profile_img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
 .certificate_list {
     padding: 0.2em 0em 0em 2em;
 }

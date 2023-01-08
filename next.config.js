@@ -3,10 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   assetPrefix: '/',
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
 }
 
 module.exports = nextConfig

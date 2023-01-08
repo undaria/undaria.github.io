@@ -1,12 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/Header'
 import { FaGithub, FaTwitter} from "react-icons/fa"
 import {IoMdMail} from "react-icons/io"
-import NextImage from 'next/image';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -22,9 +20,7 @@ export default function Home() {
       <Header />
       <main>
         <div className={styles.profile}>
-        <div className={styles.profile_img}>
-        <Image src="/my_face.JPEG" width={150} height={200} objectFit="contain" alt="My avatar" />
-        </div>
+        <img className={styles.profile_img} src="/my_face.JPEG" alt="My face" />
         <div>
           <p>名前：鷲見公崇</p>
           <p>所属：emol株式会社</p>
@@ -34,7 +30,7 @@ export default function Home() {
           <a href='https://twitter.com/kmsumi732' target="_blank" rel="noreferrer"> <FaTwitter /></a>
         </div> 
         </div>
-        
+
         <h1 className={styles.header1}>資格</h1>
         <ul className={styles.certificate_list}>
           <li>基本情報技術者</li>
