@@ -1,0 +1,25 @@
+.header1 {
+    margin: 10px 0px 0px;
+    font-size: 24px;
+}
+
+
+.certificate_list {
+    padding: 0.2em 0em 0em 2em;
+}
+.certificate_list > li {
+    position: relative;
+    padding: 0.5em 0; /*前後の文との余白*/
+    font-size: 14px;
+}
+.certificate_list > li:before {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    content:  "";     /* 空の要素作成 */
+    width:  10px;               /* 幅指定 */
+    height:  10px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #444;  /* 背景色指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+}
